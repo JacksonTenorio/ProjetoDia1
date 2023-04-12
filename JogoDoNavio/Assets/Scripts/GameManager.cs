@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     static public GameManager Instance;
     
-    /*private void Awake()
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         } 
-    }*/
+    }
 
     public void LoadScene(String scenename)
     {
@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.M))
         {
             SceneManager.LoadScene("MainMenu");
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             SceneManager.LoadScene("Initialization");
-        }
+        }*/
+        
     }
 }
