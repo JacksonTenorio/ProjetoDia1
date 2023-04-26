@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxEnergy;
     private int _currentEnergy;
     private int _points;
-    
+
     private void OnEnable()
     {
         _playerInput.onActionTriggered += OnAction;
@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
     private void addEnergy(int amount)
     {
         _currentEnergy = Mathf.Clamp(_currentEnergy + amount, 0, maxEnergy);
+        PlayerObserverManager.EnergyChanged(_currentEnergy/(float)maxEnergy);
     }
 
     private void AddPoints(int amount)

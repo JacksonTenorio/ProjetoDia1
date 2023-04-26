@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 320325766}
-  maxEnergy: 100
+  maxEnergy: 1000
 --- !u!4 &320325768
 Transform:
   m_ObjectHideFlags: 0
