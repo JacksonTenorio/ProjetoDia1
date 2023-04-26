@@ -21,6 +21,12 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         } 
     }
+    
+    public void LoadLevel(String scenename)
+    {
+        SceneManager.LoadScene(scenename);
+        SceneManager.LoadScene("GUI", LoadSceneMode.Additive);
+    }
 
     public void LoadScene(String scenename)
     {

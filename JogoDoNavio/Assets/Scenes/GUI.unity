@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 721468782}
   - component: {fileID: 721468784}
   - component: {fileID: 721468783}
+  - component: {fileID: 721468785}
   m_Layer: 5
   m_Name: PlayerPointsUI
   m_TagString: Untagged
@@ -195,8 +196,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -237.00513, y: -64.5}
-  m_SizeDelta: {x: 227.2174, y: 50}
+  m_AnchoredPosition: {x: -348.736, y: -141.868}
+  m_SizeDelta: {x: 321.953, y: 97.368}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &721468783
 MonoBehaviour:
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '9000000000
+  m_text: '900000
 
 '
   m_isRightToLeft: 0
@@ -247,8 +248,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -283,7 +284,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -306.5755, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -297,6 +298,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721468781}
   m_CullTransparentMesh: 1
+--- !u!114 &721468785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721468781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9e2c1187458d644b08221b9532db0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1641456974
 GameObject:
   m_ObjectHideFlags: 0

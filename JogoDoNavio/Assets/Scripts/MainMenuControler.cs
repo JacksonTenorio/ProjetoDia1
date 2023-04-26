@@ -7,6 +7,6 @@ public class MainMenuControler : MonoBehaviour
 {
     public void LoadLevel(String levelname)
     {
-        GameManager.Instance.LoadScene(levelname);
+        GameManager.Instance.LoadLevel(levelname);
     }
 }
