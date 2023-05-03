@@ -10,12 +10,12 @@ public class PlayerEnergyController : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerObserverManager.OnEnergyChanged += Quantidade;
+        PlayerObserverManager.OnEnergyChanged += UpdateEnergy;
     }
 
     private void OnDisable()
     {
-        PlayerObserverManager.OnEnergyChanged -= Quantidade;
+        PlayerObserverManager.OnEnergyChanged -= UpdateEnergy;
     }
 
     private void Start()
@@ -23,7 +23,7 @@ public class PlayerEnergyController : MonoBehaviour
         Energy = GetComponent<Slider>();
     }
 
-    private void Quantidade(float valor)
+    private void UpdateEnergy(float valor)
     {
         Energy.value = valor;
     }

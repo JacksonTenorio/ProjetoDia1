@@ -1,15 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     static public GameManager Instance;
-    
-    private void Awake()
+
+    [SerializeField] private List<EnemySO> Enemyes;
+    [SerializeField] private GameObject enemyPrefab;
+
+        private void Awake()
     {
         if (Instance == null)
         {
@@ -51,6 +56,24 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("Initialization");
         }*/
+        if (Keyboard.current.digit1Key.wasPressedThisFrame)
+        {
+            SpawnEnemy(0);
+        }
+        if (Keyboard.current.digit2Key.wasPressedThisFrame)
+        {
+            SpawnEnemy(1);
+        }
+        if (Keyboard.current.digit3Key.wasPressedThisFrame)
+        {
+            SpawnEnemy(2);
+        }
         
+    }
+
+    public void SpawnEnemy(int type)
+    {
+        GameObject enemy = Instantiate(enemyPrefab);
+        enemy.GetComponent<EnemyController>().InitializeEnemy(Enemyes[type].maxEnergy, Enemyes[type].wnemySprite);
     }
 }

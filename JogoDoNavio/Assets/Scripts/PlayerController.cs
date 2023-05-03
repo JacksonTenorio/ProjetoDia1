@@ -37,9 +37,9 @@ public class PlayerController : MonoBehaviour
     {
         //if (Input.GetButtonDown(KeyCode.J)) addEnergy(10);
 
-        if (Keyboard.current.jKey.wasPressedThisFrame) addEnergy(10);
+        if (Keyboard.current.jKey.wasPressedThisFrame) addEnergy(25);
         
-        if (Keyboard.current.kKey.wasPressedThisFrame) addEnergy(-10);
+        if (Keyboard.current.kKey.wasPressedThisFrame) addEnergy(-25);
         
         if (Keyboard.current.lKey.wasPressedThisFrame) AddPoints(100);
 
